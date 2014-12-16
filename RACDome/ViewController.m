@@ -72,70 +72,67 @@
      
      */
     
-    //冷状态
-    RACSignal *signal = [RACSignal createSignal:^ RACDisposable * (id<RACSubscriber> subscriber) {
-        NSLog(@"triggered");
-        [subscriber sendNext:@"foobar"];
-        [subscriber sendCompleted];
-        return nil;
+    
+    
+//    RAC(myButton,enabled) = [RACSignal combineLatest:@[self.usernameTextField.rac_textSignal,
+//                                                       self.passwordTextField.rac_textSignal]
+//                                              reduce:^(NSString *user, NSString * pwd){
+//                                                    return  @(user.length > 0 && pwd.length > 0);
+//                                              }];
+//    
+//    
+//    
+//    RAC(myLabel,text) = myTextField.rac_textSignal;
+//    RAC(myButton.titleLabel,text) = myTextField.rac_textSignal;
+//    
+//    [RACObserve(myLabel,text) subscribeNext: ^(NSString *newName){
+//        NSLog(@"newName:%@", newName);
+//    }];
+//    
+//    /**
+//     *  rac 应用于 UIButton
+//     */
+//    [[myButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+//        NSLog(@"RAC button");
+//    }];
+//    
+//    
+//    NSArray *array = @[@"foo"];
+//    [[array rac_willDeallocSignal] subscribeCompleted:^{
+//        NSLog(@"oops, i will be gone");
+//    }];
+//    array = nil;
+    
+    
+//    RACSignal *signal = [RACSignal createSignal:^ RACDisposable * (id<RACSubscriber> subscriber) {
+//        NSLog(@"triggered");
+//        [subscriber sendNext:@"foobar"];
+//        [subscriber sendCompleted];
+//        return nil;
+//    }];
+//    [signal subscribeCompleted:^{
+//        NSLog(@"subscribeCompleted");
+//    }];
+    
+    
+//    RACSignal *letters = [@"A B C D E F G H I" componentsSeparatedByString:@" "].rac_sequence.signal;
+//    
+//    // 依次输出 A B C D…
+//    [letters subscribeNext:^(NSString *x) {
+//        NSLog(@"%@", x);
+//    }];
+    
+    
+    RACSequence *letters = [@"A B C D E F G H I" componentsSeparatedByString:@" "].rac_sequence;
+    
+    // Contains: AA BB CC DD EE FF GG HH II
+    RACSequence *mapped = [letters map:^(NSString *value) {
+        
+        return [value stringByAppendingString:value];
     }];
     
-    [signal subscribeCompleted:^{
-        NSLog(@"subscribeCompleted");
-    }];
+//    [mapped ]
     
-    
-    RAC(myButton,enabled) = [RACSignal combineLatest:@[self.usernameTextField.rac_textSignal,
-                                                       self.passwordTextField.rac_textSignal]
-                                              reduce:^(NSString *user, NSString * pwd){
-                                                    return  @(user.length > 0 && pwd.length > 0);
-                                              }];
-    
-    
-    
-    RAC(myLabel,text) = myTextField.rac_textSignal;
-    RAC(myButton.titleLabel,text) = myTextField.rac_textSignal;
-    
-    [RACObserve(myLabel,text) subscribeNext: ^(NSString *newName){
-        NSLog(@"newName:%@", newName);
-    }];
-    
-    /**
-     *  rac 应用于 UIButton
-     */
-    [[myButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        NSLog(@"RAC button");
-    }];
-    
-    
-    NSArray *array = @[@"foo"];
-    [[array rac_willDeallocSignal] subscribeCompleted:^{
-        NSLog(@"oops, i will be gone");
-    }];
-    array = nil;
-    
-    
-    //    NSArray *pins = @[@172230988, @172230947, @172230899, @172230777, @172230707];
-    //    __block NSInteger index = 0;
-    //
-    //    RACSignal *signal = [[[[RACSignal interval:0.1 onScheduler:[RACScheduler scheduler]]
-    //                           take:pins.count]
-    //                          map:^id(id value) {
-    //                              return [[[HBAPIManager sharedManager] fetchPinWithPinID:[pins[index++] intValue]] doNext:^(id x) {
-    //                                  NSLog(@"这里只会执行一次");
-    //                              }];
-    //                          }]
-    //                         switchToLatest];
-    //
-    //    [signal subscribeNext:^(id sender) {
-    //        NSLog(@"pinID:%@", sender);
-    //    } completed:^{
-    //        NSLog(@"completed");
-    //    }];
-    
-    
-    
-    [self test];
 }
 
 #pragma mark - 满足条件,自动触发某个方法
