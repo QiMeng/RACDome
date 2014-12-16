@@ -147,6 +147,7 @@
     }];
     
     [self rac_liftSelector:@selector(doA:withB:) withSignals:signalA, signalB, nil];
+    
 }
 
 - (void)doA:(NSString *)A withB:(NSString *)B
