@@ -123,15 +123,7 @@
 //    }];
     
     
-    RACSequence *letters = [@"A B C D E F G H I" componentsSeparatedByString:@" "].rac_sequence;
-    
-    // Contains: AA BB CC DD EE FF GG HH II
-    RACSequence *mapped = [letters map:^(NSString *value) {
-        
-        return [value stringByAppendingString:value];
-    }];
-    
-//    [mapped ]
+
     
 }
 
