@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95037C6368E164568FB1992B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F5F8BA76FDE92F32142F7A /* libPods.a */; };
+		FF1BAA691A3FD23B00518A9F /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1BAA681A3FD23B00518A9F /* LoginModel.m */; };
+		FFBF6C861A3ED4B300590E21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6C851A3ED4B300590E21 /* main.m */; };
+		FFBF6C891A3ED4B300590E21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6C881A3ED4B300590E21 /* AppDelegate.m */; };
+		FFBF6C8C1A3ED4B400590E21 /* RACDome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6C8A1A3ED4B400590E21 /* RACDome.xcdatamodeld */; };
+		FFBF6C8F1A3ED4B400590E21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6C8E1A3ED4B400590E21 /* ViewController.m */; };
+		FFBF6C921A3ED4B400590E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBF6C901A3ED4B400590E21 /* Main.storyboard */; };
+		FFBF6C941A3ED4B400590E21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBF6C931A3ED4B400590E21 /* Images.xcassets */; };
+		FFBF6C971A3ED4B400590E21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBF6C951A3ED4B400590E21 /* LaunchScreen.xib */; };
+		FFBF6CA31A3ED4B400590E21 /* RACDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6CA21A3ED4B400590E21 /* RACDomeTests.m */; };
+		FFBF6CAE1A3ED93200590E21 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF6CAD1A3ED93200590E21 /* TwoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFBF6C9D1A3ED4B400590E21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBF6C781A3ED4B300590E21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFBF6C7F1A3ED4B300590E21;
+			remoteInfo = RACDome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55D49368B9554DF833B0D185 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		95700D675DB509E44492A3D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A1F5F8BA76FDE92F32142F7A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1BAA671A3FD23B00518A9F /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		FF1BAA681A3FD23B00518A9F /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		FFBF6C801A3ED4B300590E21 /* RACDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBF6C841A3ED4B300590E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBF6C851A3ED4B300590E21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFBF6C871A3ED4B300590E21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFBF6C881A3ED4B300590E21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFBF6C8B1A3ED4B400590E21 /* RACDome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RACDome.xcdatamodel; sourceTree = "<group>"; };
+		FFBF6C8D1A3ED4B400590E21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFBF6C8E1A3ED4B400590E21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFBF6C911A3ED4B400590E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFBF6C931A3ED4B400590E21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FFBF6C961A3ED4B400590E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FFBF6C9C1A3ED4B400590E21 /* RACDomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACDomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBF6CA11A3ED4B400590E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBF6CA21A3ED4B400590E21 /* RACDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDomeTests.m; sourceTree = "<group>"; };
+		FFBF6CAC1A3ED93200590E21 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		FFBF6CAD1A3ED93200590E21 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFBF6C7D1A3ED4B300590E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95037C6368E164568FB1992B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFBF6C991A3ED4B400590E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AEFC4C1F62F7BBD4F662BE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F5F8BA76FDE92F32142F7A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CBE4B01853B7ECD71FEF822 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55D49368B9554DF833B0D185 /* Pods.debug.xcconfig */,
+				95700D675DB509E44492A3D3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFBF6C771A3ED4B300590E21 = {
+			isa = PBXGroup;
+			children = (
+				FFBF6C821A3ED4B300590E21 /* RACDome */,
+				FFBF6C9F1A3ED4B400590E21 /* RACDomeTests */,
+				FFBF6C811A3ED4B300590E21 /* Products */,
+				3CBE4B01853B7ECD71FEF822 /* Pods */,
+				1AEFC4C1F62F7BBD4F662BE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFBF6C811A3ED4B300590E21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF6C801A3ED4B300590E21 /* RACDome.app */,
+				FFBF6C9C1A3ED4B400590E21 /* RACDomeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFBF6C821A3ED4B300590E21 /* RACDome */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF6C871A3ED4B300590E21 /* AppDelegate.h */,
+				FFBF6C881A3ED4B300590E21 /* AppDelegate.m */,
+				FFBF6C8D1A3ED4B400590E21 /* ViewController.h */,
+				FFBF6C8E1A3ED4B400590E21 /* ViewController.m */,
+				FF1BAA671A3FD23B00518A9F /* LoginModel.h */,
+				FF1BAA681A3FD23B00518A9F /* LoginModel.m */,
+				FFBF6CAC1A3ED93200590E21 /* TwoViewController.h */,
+				FFBF6CAD1A3ED93200590E21 /* TwoViewController.m */,
+				FFBF6C901A3ED4B400590E21 /* Main.storyboard */,
+				FFBF6C931A3ED4B400590E21 /* Images.xcassets */,
+				FFBF6C951A3ED4B400590E21 /* LaunchScreen.xib */,
+				FFBF6C8A1A3ED4B400590E21 /* RACDome.xcdatamodeld */,
+				FFBF6C831A3ED4B300590E21 /* Supporting Files */,
+			);
+			path = RACDome;
+			sourceTree = "<group>";
+		};
+		FFBF6C831A3ED4B300590E21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF6C841A3ED4B300590E21 /* Info.plist */,
+				FFBF6C851A3ED4B300590E21 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFBF6C9F1A3ED4B400590E21 /* RACDomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF6CA21A3ED4B400590E21 /* RACDomeTests.m */,
+				FFBF6CA01A3ED4B400590E21 /* Supporting Files */,
+			);
+			path = RACDomeTests;
+			sourceTree = "<group>";
+		};
+		FFBF6CA01A3ED4B400590E21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF6CA11A3ED4B400590E21 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFBF6C7F1A3ED4B300590E21 /* RACDome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFBF6CA61A3ED4B400590E21 /* Build configuration list for PBXNativeTarget "RACDome" */;
+			buildPhases = (
+				5DD949754507F4CA31D66244 /* Check Pods Manifest.lock */,
+				FFBF6C7C1A3ED4B300590E21 /* Sources */,
+				FFBF6C7D1A3ED4B300590E21 /* Frameworks */,
+				FFBF6C7E1A3ED4B300590E21 /* Resources */,
+				60D3DD4415FD58D0E46D258E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RACDome;
+			productName = RACDome;
+			productReference = FFBF6C801A3ED4B300590E21 /* RACDome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFBF6C9B1A3ED4B400590E21 /* RACDomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFBF6CA91A3ED4B400590E21 /* Build configuration list for PBXNativeTarget "RACDomeTests" */;
+			buildPhases = (
+				FFBF6C981A3ED4B400590E21 /* Sources */,
+				FFBF6C991A3ED4B400590E21 /* Frameworks */,
+				FFBF6C9A1A3ED4B400590E21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFBF6C9E1A3ED4B400590E21 /* PBXTargetDependency */,
+			);
+			name = RACDomeTests;
+			productName = RACDomeTests;
+			productReference = FFBF6C9C1A3ED4B400590E21 /* RACDomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFBF6C781A3ED4B300590E21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = QiMENG;
+				TargetAttributes = {
+					FFBF6C7F1A3ED4B300590E21 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					FFBF6C9B1A3ED4B400590E21 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = FFBF6C7F1A3ED4B300590E21;
+					};
+				};
+			};
+			buildConfigurationList = FFBF6C7B1A3ED4B300590E21 /* Build configuration list for PBXProject "RACDome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFBF6C771A3ED4B300590E21;
+			productRefGroup = FFBF6C811A3ED4B300590E21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFBF6C7F1A3ED4B300590E21 /* RACDome */,
+				FFBF6C9B1A3ED4B400590E21 /* RACDomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFBF6C7E1A3ED4B300590E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBF6C921A3ED4B400590E21 /* Main.storyboard in Resources */,
+				FFBF6C971A3ED4B400590E21 /* LaunchScreen.xib in Resources */,
+				FFBF6C941A3ED4B400590E21 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFBF6C9A1A3ED4B400590E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DD949754507F4CA31D66244 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60D3DD4415FD58D0E46D258E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFBF6C7C1A3ED4B300590E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBF6C891A3ED4B300590E21 /* AppDelegate.m in Sources */,
+				FFBF6C861A3ED4B300590E21 /* main.m in Sources */,
+				FFBF6C8F1A3ED4B400590E21 /* ViewController.m in Sources */,
+				FFBF6CAE1A3ED93200590E21 /* TwoViewController.m in Sources */,
+				FFBF6C8C1A3ED4B400590E21 /* RACDome.xcdatamodeld in Sources */,
+				FF1BAA691A3FD23B00518A9F /* LoginModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFBF6C981A3ED4B400590E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBF6CA31A3ED4B400590E21 /* RACDomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFBF6C9E1A3ED4B400590E21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFBF6C7F1A3ED4B300590E21 /* RACDome */;
+			targetProxy = FFBF6C9D1A3ED4B400590E21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFBF6C901A3ED4B400590E21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFBF6C911A3ED4B400590E21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFBF6C951A3ED4B400590E21 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFBF6C961A3ED4B400590E21 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFBF6CA41A3ED4B400590E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFBF6CA51A3ED4B400590E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFBF6CA71A3ED4B400590E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D49368B9554DF833B0D185 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RACDome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFBF6CA81A3ED4B400590E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95700D675DB509E44492A3D3 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RACDome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FFBF6CAA1A3ED4B400590E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RACDomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RACDome.app/RACDome";
+			};
+			name = Debug;
+		};
+		FFBF6CAB1A3ED4B400590E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RACDomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RACDome.app/RACDome";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFBF6C7B1A3ED4B300590E21 /* Build configuration list for PBXProject "RACDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBF6CA41A3ED4B400590E21 /* Debug */,
+				FFBF6CA51A3ED4B400590E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFBF6CA61A3ED4B400590E21 /* Build configuration list for PBXNativeTarget "RACDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBF6CA71A3ED4B400590E21 /* Debug */,
+				FFBF6CA81A3ED4B400590E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFBF6CA91A3ED4B400590E21 /* Build configuration list for PBXNativeTarget "RACDomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBF6CAA1A3ED4B400590E21 /* Debug */,
+				FFBF6CAB1A3ED4B400590E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FFBF6C8A1A3ED4B400590E21 /* RACDome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FFBF6C8B1A3ED4B400590E21 /* RACDome.xcdatamodel */,
+			);
+			currentVersion = FFBF6C8B1A3ED4B400590E21 /* RACDome.xcdatamodel */;
+			path = RACDome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FFBF6C781A3ED4B300590E21 /* Project object */;
+}
