@@ -79,7 +79,7 @@
 //                                              reduce:^(NSString *user, NSString * pwd){
 //                                                    return  @(user.length > 0 && pwd.length > 0);
 //                                              }];
-//    
+//
 //    
 //    
 //    RAC(myLabel,text) = myTextField.rac_textSignal;
@@ -88,7 +88,7 @@
 //    [RACObserve(myLabel,text) subscribeNext: ^(NSString *newName){
 //        NSLog(@"newName:%@", newName);
 //    }];
-//    
+//
 //    /**
 //     *  rac 应用于 UIButton
 //     */

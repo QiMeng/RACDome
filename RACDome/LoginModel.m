@@ -32,6 +32,7 @@
     
     return self;
 }
+
 +(RACSignal *)logInWithUsername:(NSString *)username password:(NSString *)password {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         [PXRequest authenticateWithUserName:username password:password completion:^(BOOL success) {
