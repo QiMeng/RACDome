@@ -12,6 +12,13 @@
 #define COCOAPODS_VERSION_MINOR_500px_iOS_api 0
 #define COCOAPODS_VERSION_PATCH_500px_iOS_api 5
 
+// IQKeyboardManager
+#define COCOAPODS_POD_AVAILABLE_IQKeyboardManager
+// This library does not follow semantic-versioning,
+// so we were not able to define version macros.
+// Please contact the author.
+// Version: 3.2.0.3.
+
 // ReactiveCocoa
 #define COCOAPODS_POD_AVAILABLE_ReactiveCocoa
 #define COCOAPODS_VERSION_MAJOR_ReactiveCocoa 2

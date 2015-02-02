@@ -35,7 +35,7 @@
     
     self.title = @"RAC";
     
-    /*
+    
     self.viewModel = [LoginModel new];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Log In" style:UIBarButtonItemStylePlain target:nil action:nil];
@@ -69,8 +69,19 @@
             return nil;
         }];
     }];
-     
-     */
+    
+//    RACSignal * aa = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+//        @strongify(self);
+//        
+//         NSLog(@"222211111");
+////        [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
+////            [subscriber sendCompleted];
+////        }];
+//    }];
+//     
+//     [aa subscribeNext:^(id x) {
+//         NSLog(@"2222");
+//     }];
     
     
     
